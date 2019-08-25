@@ -44,6 +44,7 @@
 		<div class="mdui-container">
 			<div class="mdui-typo mb-post-content">
 				<Content />
+				<div class="mdui-text-right mdui-typo-caption-opacity" v-if="$page.lastUpdated">Last updated: {{ $page.lastUpdated }}</div>
 			</div>
 		</div>
 		<div class="mdui-bottom-nav mdui-color-indigo mdui-bottom-nav-scroll-hide">

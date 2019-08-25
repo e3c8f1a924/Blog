@@ -43,7 +43,7 @@
 				<div class="mdui-card mdui-ripple mdui-hoverable mb-post-list-item" v-for="page in blogs">
 					<div class="mdui-card-primary">
 						<a :href="page.path"><div class="mdui-card-primary-title" style="color: black;">{{ page.title }}</div></a>
-						<div class="mdui-card-primary-subtitle" v-if="page.frontmatter.time">{{ page.frontmatter.time }}</div>
+						<div class="mdui-card-primary-subtitle"><span v-if="page.frontmatter.time">{{ page.frontmatter.time }}</span><span v-if="page.lastUpdated">&nbsp;|&nbsp;Last updated: {{ page.lastUpdated }}</span></div>
 					</div>
 					<div class="mdui-card-content mdui-text-color-grey">{{ page.frontmatter.description }}</div>
 				</div>
@@ -104,7 +104,10 @@ export default{
 			}
 		});
 		b=b.sort((x,y) => {
-			if(x.frontmatter.top==y.frontmatter.top)return new Date(x.frontmatter.time)>new Date(y.frontmatter.time)?-1:1;
+			if(x.frontmatter.top==y.frontmatter.top){
+				if(x.lastUpdated==y.lastUpdated)return new Date(x.frontmatter.time)>new Date(y.frontmatter.time)?-1:1;
+				return new Date(x.lastUpdated)>new Date(y.lastUpdated)?-1:1;
+			}
 			return x.frontmatter.top>y.frontmatter.top?-1:1;
 		});
 		this.blogs=b;
