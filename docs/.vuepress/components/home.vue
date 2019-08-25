@@ -43,7 +43,7 @@
 				<div class="mdui-card mdui-ripple mdui-hoverable mb-post-list-item" v-for="page in blogs">
 					<div class="mdui-card-primary">
 						<a :href="page.path"><div class="mdui-card-primary-title" style="color: black;">{{ page.title }}</div></a>
-						<div class="mdui-card-primary-subtitle"><span v-if="page.frontmatter.time">{{ page.frontmatter.time }}</span><span v-if="page.lastUpdated">&nbsp;|&nbsp;Last updated: {{ page.lastUpdated }}</span></div>
+						<div class="mdui-card-primary-subtitle"><span v-if="page.frontmatter.time">{{ page.frontmatter.time }}</span><span v-if="page.lastUpdated">&nbsp;|&nbsp;Last updated: {{ page.lastUpdated|formatTime }}</span></div>
 					</div>
 					<div class="mdui-card-content mdui-text-color-grey">{{ page.frontmatter.description }}</div>
 				</div>
@@ -116,7 +116,13 @@ export default{
 	},
 	methods:{
 		
-	}
+	},
+	filters:{
+		formatTime(time){
+			const moment=require('moment');
+			return moment(time).fromNow();
+		}
+	},
 };
 </script>
 <style>
