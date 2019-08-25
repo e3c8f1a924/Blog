@@ -1,0 +1,31 @@
+{
+  "name": "Blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "publish": "./publish.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bambusaceae/Blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bambusaceae/Blog/issues"
+  },
+  "homepage": "https://github.com/Bambusaceae/Blog#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "esm": "^3.2.25",
+    "mdui": "^0.4.3",
+    "vuepress-plugin-countable": "^1.0.1",
+    "vuepress-plugin-nprogress": "^1.1.1",
+    "vuepress-plugin-sitemap": "^2.1.2"
+  }
+}
