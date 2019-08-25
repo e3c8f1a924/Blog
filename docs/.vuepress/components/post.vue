@@ -47,7 +47,7 @@
 				<div class="mdui-text-right mdui-typo-caption-opacity" v-if="$page.frontmatter.time">{{ $page.frontmatter.time }}</div>
 				<div class="mdui-text-right mdui-typo-caption-opacity" v-if="lastUpdated">Last updated: {{ lastUpdated }}</div>
 				<hr />
-				<div id="mb-comments"></div>
+				<Comments></Comments>
 			</div>
 		</div>
 		<div class="mdui-bottom-nav mdui-color-indigo mdui-bottom-nav-scroll-hide">
@@ -62,18 +62,6 @@
 		</div>
 		<script type="text/javascript">
 			mdui.mutation();
-		</script>
-		<script>
-			const gitalk = new Gitalk({
-				clientID: 'b6fcb9963606f41a6109',
-				clientSecret: '8e9d236be7f3dbd3c8e3e47a21386d132d915209',
-				repo: 'Bambusaceae.github.io',
-				owner: 'Bambusaceae',
-				admin: ['Bambusaceae'],
-				id: md5(window.location.pathname),
-				distractionFreeMode: false
-			})
-			gitalk.render('mb-comments')
 		</script>
 		<script>
 			(function(){
@@ -92,6 +80,7 @@
 </template>
 
 <script>
+import comments from './comments.vue';
 export default{
 	data(){
 		return {
@@ -118,6 +107,9 @@ export default{
 	},
 	methods:{
 		
+	},
+	components:{
+		Comments:comments
 	}
 };
 </script>
