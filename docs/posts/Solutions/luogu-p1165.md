@@ -1,6 +1,6 @@
 ---
 layout: post
-time: 2020-1-19 11:28
+time: 2020-01-19 11:28
 Top: 50
 title: "[Solution]日志分析"
 description: Luogu P1165
