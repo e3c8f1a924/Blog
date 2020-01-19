@@ -73,6 +73,13 @@ module.exports = {
 			{
 				src: '/global.js'
 			}
+		],
+		[
+			'script',
+			{
+				
+			},
+			"var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");hm.src = \"https://hm.baidu.com/hm.js?a04f74e26e451964b94a7461c1ed6d0d\";var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(hm, s);})();"
 		]
 	],
 	plugins: {
