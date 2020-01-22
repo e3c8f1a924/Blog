@@ -45,7 +45,7 @@
 </template>
 <script>
 export default{
-    name: "_nav",
+    name: "left-nav",
 	data(){
 		return {
 			tags: [],
