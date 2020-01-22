@@ -67,7 +67,7 @@
 
 <script>
 import comments from './comments.vue';
-import nav from './nav.vue';
+import _nav from './nav.vue';
 export default{
 	data(){
 		return {
@@ -97,7 +97,7 @@ export default{
 	},
 	components:{
 		Comments:comments,
-		Nav:nav
+		Nav:_nav
 	}
 };
 </script>

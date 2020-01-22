@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import nav from './nav.vue'
+import _nav from './nav.vue'
 export default{
 	data(){
 		return {
@@ -116,7 +116,7 @@ export default{
 		}
 	},
 	components:{
-		Nav:nav
+		Nav:_nav
 	}
 };
 </script>
