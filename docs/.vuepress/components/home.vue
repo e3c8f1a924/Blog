@@ -1,21 +1,6 @@
 <template>
 	<div class="mdui-bottom-nav-fixed" id="mb-home">
-		<div class="mdui-drawer mdui-drawer-close mdui-color-white" id="mb-nav">
-			<div class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
-				<div class="mdui-collapse-item mdui-collapse-item-open">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-						<i class="mdui-list-item-icon mdui-icon material-icons">&#xe157;</i>
-						<div class="mdui-list-item-content">Links</div>
-						<i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe313;</i>
-					</div>
-					<div class="mdui-collapse-item-body mdui-list" v-for="page in $site.pages" v-if="page.frontmatter.layout=='home'">
-						<a v-for="link in page.frontmatter.links" :href="link.href" class="mdui-list-item mdui-ripple" target="_blank">
-							<div class="mdui-list-item-content">{{ link.name }}</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		<Nav/>
 		<div class="mdui-appbar">
 			<div class="mdui-toolbar mdui-color-indigo">
 				<button class="mdui-btn mdui-btn-icon" onclick="showNav()"><i class="mdui-icon material-icons">menu</i></button>
@@ -38,13 +23,19 @@
 		</div>
 		<div class="mdui-container">
 			<div class="mdui-typo">
-				<h1>文章列表</h1>
+				<h1>Posts</h1>
 				<hr />
 				<div class="mdui-card mdui-ripple mdui-hoverable mb-post-list-item" v-for="page in blogs">
 					<div class="mdui-card-primary">
 						<a :href="page.path"><div class="mdui-card-primary-title" style="color: black;">{{ page.title }}</div></a>
 						<div class="mdui-card-primary-subtitle"><span v-if="page.frontmatter.time">{{ page.frontmatter.time }}</span><span v-if="page.lastUpdated">&nbsp;|&nbsp;Last updated: {{ page.lastUpdated|formatTime }}</span></div>
 					</div>
+					<div class="mdui-card-menu" v-if="typeof page.frontmatter.tag !='undefined'">
+            			<div class="mdui-chip">
+							<div class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe8e6;</i></div>
+							<div class="mdui-chip-title">{{ page.frontmatter.tag }}</div>
+						</div>
+          			</div>
 					<div class="mdui-card-content mdui-text-color-grey">{{ page.frontmatter.description }}</div>
 				</div>
 			</div>
@@ -79,12 +70,13 @@
 </template>
 
 <script>
+import nav from './nav.vue'
 export default{
 	data(){
 		return {
 			blogs: [],
 			tabs: [],
-			home: []
+			home: [],
 		};
 	},
 	mounted() {
@@ -105,8 +97,8 @@ export default{
 		});
 		b=b.sort((x,y) => {
 			if(x.frontmatter.top==y.frontmatter.top){
-				if(x.lastUpdated==y.lastUpdated)return new Date(x.frontmatter.time)>new Date(y.frontmatter.time)?-1:1;
-				return new Date(x.lastUpdated)>new Date(y.lastUpdated)?-1:1;
+				if(x.frontmatter.time==y.frontmatter.time)return new Date(x.lastUpdated)>new Date(y.lastUpdated)?-1:1;
+				return new Date(x.frontmatter.time)>new Date(y.frontmatter.time)?-1:1;
 			}
 			return x.frontmatter.top>y.frontmatter.top?-1:1;
 		});
@@ -123,6 +115,9 @@ export default{
 			return moment(time).fromNow();
 		}
 	},
+	components:{
+		Nav:nav
+	}
 };
 </script>
 <style>

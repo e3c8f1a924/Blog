@@ -1,21 +1,6 @@
 <template>
 	<div class="mdui-bottom-nav-fixed" id="mb-post">
-		<div class="mdui-drawer mdui-drawer-close mdui-color-white" id="mb-nav">
-			<div class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
-				<div class="mdui-collapse-item">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-						<i class="mdui-list-item-icon mdui-icon material-icons">&#xe157;</i>
-						<div class="mdui-list-item-content">Links</div>
-						<i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe313;</i>
-					</div>
-					<div class="mdui-collapse-item-body mdui-list" v-for="page in $site.pages" v-if="page.frontmatter.layout=='home'">
-						<a v-for="link in page.frontmatter.links" :href="link.href" class="mdui-list-item mdui-ripple" target="_blank">
-							<div class="mdui-list-item-content">{{ link.name }}</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		<Nav/>
 		<div class="mdui-appbar">
 			<div class="mdui-toolbar mdui-color-indigo">
 				<button class="mdui-btn mdui-btn-icon" onclick="showNav()"><i class="mdui-icon material-icons">menu</i></button>
@@ -44,8 +29,9 @@
 		<div class="mdui-container">
 			<div class="mdui-typo mb-post-content">
 				<Content />
-				<div class="mdui-text-right mdui-typo-caption-opacity" v-if="$page.frontmatter.time">{{ $page.frontmatter.time }}</div>
-				<div class="mdui-text-right mdui-typo-caption-opacity" v-if="lastUpdated">Last updated: {{ lastUpdated }}</div>
+				<div class="mdui-text-right mdui-typo-caption-opacity" v-if="$page.frontmatter.tag"><i class="mdui-icon material-icons">&#xe8e6;</i>&emsp;{{ $page.frontmatter.tag }}</div>
+				<div class="mdui-text-right mdui-typo-caption-opacity" v-if="$page.frontmatter.time"><i class="mdui-icon material-icons">&#xe192;</i>&emsp;{{ $page.frontmatter.time }}</div>
+				<div class="mdui-text-right mdui-typo-caption-opacity" v-if="lastUpdated">Last updated:&emsp;{{ lastUpdated }}</div>
 				<hr />
 				<Comments></Comments>
 			</div>
@@ -81,6 +67,7 @@
 
 <script>
 import comments from './comments.vue';
+import nav from './nav.vue';
 export default{
 	data(){
 		return {
@@ -109,7 +96,8 @@ export default{
 		
 	},
 	components:{
-		Comments:comments
+		Comments:comments,
+		Nav:nav
 	}
 };
 </script>

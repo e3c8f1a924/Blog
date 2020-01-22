@@ -4,6 +4,7 @@ time: 2020-01-19 11:28
 Top: 50
 title: "[Solution]日志分析"
 description: Luogu P1165
+tag: 题解
 ---
 
 这道题目很简单，只是一道栈的模拟题。至于最大值，我们可以用平衡树来维护。

@@ -89,5 +89,8 @@ module.exports = {
 		},
 		'nprogress': {}
 	},
-	serviceWorker: true
+	serviceWorker: true,
+	markdown:{
+		lineNumbers: true
+	}
 }

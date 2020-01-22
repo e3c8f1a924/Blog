@@ -1,21 +1,6 @@
 <template>
 	<div class="mdui-bottom-nav-fixed" id="mb-page">
-		<div class="mdui-drawer mdui-drawer-close mdui-color-theme" id="mb-nav">
-			<div class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}">
-				<div class="mdui-collapse-item">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-						<i class="mdui-list-item-icon mdui-icon material-icons">&#xe157;</i>
-						<div class="mdui-list-item-content">Links</div>
-						<i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe313;</i>
-					</div>
-					<div class="mdui-collapse-item-body mdui-list" v-for="page in $site.pages" v-if="page.frontmatter.layout=='home'">
-						<a v-for="link in page.frontmatter.links" :href="link.href" class="mdui-list-item mdui-ripple" target="_blank">
-							<div class="mdui-list-item-content">{{ link.name }}</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		<Nav/>
 		<div class="mdui-appbar">
 			<div class="mdui-toolbar mdui-color-indigo">
 				<button class="mdui-btn mdui-btn-icon" onclick="showNav()"><i class="mdui-icon material-icons">menu</i></button>
@@ -77,6 +62,7 @@
 </template>
 
 <script>
+import nav from './nav.vue'
 export default{
 	data(){
 		return {
@@ -103,6 +89,9 @@ export default{
 	},
 	methods:{
 		
+	},
+	components:{
+		Nav:nav
 	}
 };
 </script>

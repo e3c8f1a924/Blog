@@ -4,6 +4,7 @@ time: 2019-07-28 08:00
 Top: 50
 title: Git教程
 description: Git的基本配置与使用。
+tag: 学习笔记
 ---
 
 # 为什么要用Git？
