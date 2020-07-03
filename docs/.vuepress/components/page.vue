@@ -91,7 +91,7 @@ export default{
 		
 	},
 	components:{
-		Sidebar:sidebar
+		Sidebar:Sidebar
 	}
 };
 </script>
