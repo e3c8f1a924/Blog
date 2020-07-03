@@ -1,6 +1,6 @@
 <template>
 	<div class="mdui-bottom-nav-fixed" id="mb-post">
-		<Nav/>
+		<Sidebar/>
 		<div class="mdui-appbar">
 			<div class="mdui-toolbar mdui-color-indigo">
 				<button class="mdui-btn mdui-btn-icon" onclick="showNav()"><i class="mdui-icon material-icons">menu</i></button>
@@ -67,7 +67,7 @@
 
 <script>
 import comments from './comments.vue';
-import _nav from './nav.vue';
+import sidebar from './sidebar.vue';
 export default{
 	data(){
 		return {
@@ -97,7 +97,7 @@ export default{
 	},
 	components:{
 		Comments:comments,
-		Nav:_nav
+		Sidebar:sidebar
 	}
 };
 </script>

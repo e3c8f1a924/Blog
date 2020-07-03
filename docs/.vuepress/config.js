@@ -80,17 +80,31 @@ module.exports = {
 				
 			},
 			"var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");hm.src = \"https://hm.baidu.com/hm.js?a04f74e26e451964b94a7461c1ed6d0d\";var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(hm, s);})();"
+		],
+		[
+			'link',
+			{
+				rel: 'stylesheet',
+				href: 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css'
+			}
+		],
+		[
+			'link',
+			{
+				rel: 'stylesheet',
+				href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css'
+			}
 		]
 	],
 	plugins: {
 		'@vuepress/last-updated': {},
 		'sitemap': {
 			hostname: 'https://bambusoideae.cn'
-		},
-		'nprogress': {}
+		}
 	},
 	serviceWorker: true,
-	markdown:{
-		lineNumbers: true
+	extendMarkdown(md){
+	    md.set({html: true});
+	    md.use(require('markdown-it-katex'));
 	}
 }
