@@ -4,6 +4,7 @@ time: 2020-08-07 15:19:09
 Top: 50
 title: 红黑树入门
 description: 其实没有想象中的那么难。
+tag: 学习笔记
 ---
 
 # 前置知识
@@ -237,9 +238,10 @@ namespace RBTree{
 
 # 例题
 
-## P6136 【模板】普通平衡树（数据加强版）
+## [Luogu-P6136](https://www.luogu.com.cn/problem/P6136)/[LOJ-104](https://loj.ac/problem/104) 【模板】普通平衡树（数据加强版）
 
-https://www.luogu.com.cn/record/36565465
+- <https://www.luogu.com.cn/record/36565465>
+- <https://loj.ac/submission/896855>
 
 所有操作整合一下就好了。
 
@@ -320,6 +322,6 @@ int main(){n=read(),m=read(),init();for(int i=1;i<=n;i++)insert(read());
 
 # References
 
-- https://www.jianshu.com/p/e136ec79235c
-- https://blog.csdn.net/Gosick_Geass_Gate/article/details/88556840
-- https://www.luogu.com.cn/blog/_post/26864
+- [1] <https://www.jianshu.com/p/e136ec79235c>
+- [2] <https://blog.csdn.net/Gosick_Geass_Gate/article/details/88556840>
+- [3] <https://www.luogu.com.cn/blog/_post/26864>

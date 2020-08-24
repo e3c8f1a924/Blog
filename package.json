@@ -27,7 +27,6 @@
     "markdown-it-katex": "^2.0.3",
     "mdui": "^0.4.3",
     "moment": "^2.24.0",
-    "vuepress-plugin-countable": "^1.0.1",
     "vuepress-plugin-nprogress": "^1.1.1",
     "vuepress-plugin-sitemap": "^2.1.2"
   }
