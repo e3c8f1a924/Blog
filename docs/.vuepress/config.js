@@ -38,22 +38,9 @@ module.exports = {
 			}
 		],
 		[
-			'link',
-			{
-				rel: 'stylesheet',
-				href: '//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css'
-			}
-		],
-		[
 			'script',
 			{
 				src: '//code.jquery.com/jquery-3.4.1.min.js'
-			}
-		],
-		[
-			'script',
-			{
-				src: '//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js'
 			}
 		],
 		[
