@@ -3,7 +3,7 @@ layout: post
 time: 2020-08-07 15:19:09
 Top: 50
 title: 红黑树入门
-description: 其实很简单。
+description: 其实没有想象中的那么难。
 ---
 
 # 前置知识
