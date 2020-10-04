@@ -1,4 +1,4 @@
-cd docs/.vuepress/dist
+cd src/.vuepress/dist
 echo "bambusoideae.cn">CNAME
 git init
 git add -A
