@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src --debug",
-    "publish": "./publish.sh"
+    "pub": "./publish.sh"
   },
   "repository": {
     "type": "git",
