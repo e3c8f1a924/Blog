@@ -1,7 +1,7 @@
 ---
 time: 2020-02-21 11:29:36
 title: "FFT&NTT"
-subtitle: FFT and NTT
+description: FFT and NTT
 tags:
 - OI相关
 - 数学

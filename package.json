@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src --debug",
+    "build": "vuepress build src",
+    "dbg": "vuepress build src --debug",
     "pub": "./publish.sh"
   },
   "repository": {
@@ -20,8 +21,16 @@
   "homepage": "https://github.com/Bambusaceae/Blog#readme",
   "dependencies": {
     "@vuepress/plugin-blog": "^1.9.2",
+    "chalk": "^2.0.0",
+    "commander": "^2.0.0",
+    "esm": "^3.2.25",
+    "jquery": "^3.5.1",
     "markdown-it": "^10.0.0",
-    "markdown-it-katex": "^2.0.3",
+    "markdown-it-katex-renderer": "^1.0.0",
+    "react": "15.x.x",
+    "react-dom": "15.x.x",
+    "vue": "^2.5.18",
+    "vuepress": "^1.6.0",
     "vuepress-plugin-blog": "^0.0.2",
     "vuepress-theme-bootstrap-simple": "^1.0.1"
   }

@@ -87,6 +87,6 @@ module.exports = {
 	serviceWorker: true,
 	extendMarkdown(md){
 	    md.set({html: true});
-	    md.use(require('markdown-it-katex'));
+	    md.use(require('markdown-it-katex-renderer'));
 	}
 };
