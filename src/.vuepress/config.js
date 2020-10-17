@@ -47,9 +47,10 @@ module.exports = {
 		},
 		preferences: {
 			links: [
-				{title: 'opensouls的博客', href: 'https://blog.lhwcrt.top/'},
-				{title: 'Helium的博客', href: 'https://keepthethink.github.io/'},
-				{title: 'F Zx的博客', href: 'https://2759942374.github.io/'}
+				{title: 'opensouls 的博客', href: 'https://blog.lhwcrt.top/'},
+				{title: 'Helium 的博客', href: 'https://keepthethink.github.io/'},
+				{title: 'F Zx 的博客', href: 'https://2759942374.github.io/'},
+				{title: 'Schwarzkopf-Henkal 的博客', href: 'http://175.24.116.241/'}
 			],
 			navlinks: [
 				{title: "GitHub",href: "https://github.com/Bambusaceae/"}
