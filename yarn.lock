@@ -2356,22 +2356,22 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
 
 commander@2.17.x:
   version "2.17.1"
-  resolved "https://registry.npm.taobao.org/commander/download/commander-2.17.1.tgz?cache=0&sync_timestamp=1598576116597&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
+  resolved "https://registry.npm.taobao.org/commander/download/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
   integrity sha1-vXerfebelCBc6sxy8XFtKfIKd78=
 
 commander@^2.0.0, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
-  resolved "https://registry.npm.taobao.org/commander/download/commander-2.20.3.tgz?cache=0&sync_timestamp=1598576116597&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  resolved "https://registry.npm.taobao.org/commander/download/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
 
 commander@^6.1.0:
   version "6.1.0"
-  resolved "https://registry.npm.taobao.org/commander/download/commander-6.1.0.tgz?cache=0&sync_timestamp=1598576116597&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-6.1.0.tgz#f8d722b78103141006b66f4c7ba1e97315ba75bc"
+  resolved "https://registry.npm.taobao.org/commander/download/commander-6.1.0.tgz#f8d722b78103141006b66f4c7ba1e97315ba75bc"
   integrity sha1-+Ncit4EDFBAGtm9Me6HpcxW6dbw=
 
 commander@~2.19.0:
   version "2.19.0"
-  resolved "https://registry.npm.taobao.org/commander/download/commander-2.19.0.tgz?cache=0&sync_timestamp=1598576116597&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
+  resolved "https://registry.npm.taobao.org/commander/download/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
   integrity sha1-9hmKqE5bg8RgVLlN3tv+1e6f8So=
 
 commondir@^1.0.1:
@@ -6572,7 +6572,7 @@ rc@^1.2.8:
 
 react-dom@15.x.x:
   version "15.7.0"
-  resolved "https://registry.npm.taobao.org/react-dom/download/react-dom-15.7.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-dom%2Fdownload%2Freact-dom-15.7.0.tgz#39106dee996d0742fb0f43d567ef8b8153483ab2"
+  resolved "https://registry.npm.taobao.org/react-dom/download/react-dom-15.7.0.tgz#39106dee996d0742fb0f43d567ef8b8153483ab2"
   integrity sha1-ORBt7pltB0L7D0PVZ++LgVNIOrI=
   dependencies:
     fbjs "^0.8.9"
@@ -6592,7 +6592,7 @@ react-is@^16.8.1:
 
 react@15.x.x:
   version "15.7.0"
-  resolved "https://registry.npm.taobao.org/react/download/react-15.7.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact%2Fdownload%2Freact-15.7.0.tgz#10308fd42ac6912a250bf00380751abc41ac7106"
+  resolved "https://registry.npm.taobao.org/react/download/react-15.7.0.tgz#10308fd42ac6912a250bf00380751abc41ac7106"
   integrity sha1-EDCP1CrGkSolC/ADgHUavEGscQY=
   dependencies:
     create-react-class "^15.6.0"
@@ -8097,7 +8097,7 @@ vue-template-es2015-compiler@^1.9.0:
 
 vue@^2.5.18, vue@^2.6.10:
   version "2.6.12"
-  resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz?cache=0&sync_timestamp=1602778387795&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
+  resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=
 
 vuejs-paginate@^2.1.0:
@@ -8174,9 +8174,9 @@ vuepress-plugin-smooth-scroll@^0.0.3:
     smoothscroll-polyfill "^0.4.3"
 
 vuepress-theme-bootstrap-simple@^1.0.1:
-  version "1.0.3"
-  resolved "https://registry.npm.taobao.org/vuepress-theme-bootstrap-simple/download/vuepress-theme-bootstrap-simple-1.0.3.tgz#14cd06aa3187aa65b5a0d4e3500cad08dae523e8"
-  integrity sha1-FM0GqjGHqmW1oNTjUAytCNrlI+g=
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/vuepress-theme-bootstrap-simple/download/vuepress-theme-bootstrap-simple-1.0.4.tgz#c06d32a9abdcd1e040f90b6eddca0b07926e9d90"
+  integrity sha1-wG0yqavc0eBA+Qtu3coLB5JunZA=
   dependencies:
     "@vuepress/plugin-blog" "^1.9.2"
     bootstrap-vue "^2.16.0"
@@ -8191,7 +8191,7 @@ vuepress-theme-bootstrap-simple@^1.0.1:
 
 vuepress@^1.6.0:
   version "1.7.1"
-  resolved "https://registry.npm.taobao.org/vuepress/download/vuepress-1.7.1.tgz?cache=0&sync_timestamp=1602814879374&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvuepress%2Fdownload%2Fvuepress-1.7.1.tgz#bb0e139d8c407a0b5aa962cf9577832a5808937e"
+  resolved "https://registry.npm.taobao.org/vuepress/download/vuepress-1.7.1.tgz#bb0e139d8c407a0b5aa962cf9577832a5808937e"
   integrity sha1-uw4TnYxAegtaqWLPlXeDKlgIk34=
   dependencies:
     "@vuepress/core" "1.7.1"
